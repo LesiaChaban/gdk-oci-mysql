@@ -111,6 +111,14 @@ In this lab, you will:
 	datasources.default.password=${JDBC_PASSWORD:elementary}
 	```
 
+12. Set the environment variable `DATASOURCES_DEFAULT_URL` using the MySQL database name you created.
+
+	```bash
+	<copy>
+	export DATASOURCES_DEFAULT_URL='jdbc:mysql://'$MYSQL_IP':3306/<gdkDB'
+	</copy>
+	```
+
 ## Task 3: <if type="desktop">Use</if><if type="tenancy">Configure</if> OCI Instance Principal Authentication
 
 1. In VS Code, open `bootstrap-oraclecloud.properties`. The application is configured to use `OCI Instance Principal Authentication` when it is running on an OCI Compute Instance. Uncomment it.

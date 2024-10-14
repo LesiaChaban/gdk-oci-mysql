@@ -112,7 +112,7 @@ Set the MySQL Private IP Address value in an environment variable called `MYSQL_
 
       Secret Type Template: Plain-Text
 
-      Secret Contents: guide_user'@'<COMPUTE_INSTANCE_PRIVATE_IP>
+      Secret Contents: guide_user
 
       Show Base64 conversion: YES
       ```
