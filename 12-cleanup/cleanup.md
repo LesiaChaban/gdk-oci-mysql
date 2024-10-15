@@ -22,7 +22,7 @@ In this lab, you will:
 
 From the Oracle Cloud Console, clean up the resources provisioned for this workshop:
 
-1. From **Databases** >> **MySQL HeatWave Database** >> **DB Systems**, click **delete** to delete the MySQL HeatWave Database instance.
+1. From **Databases** >> **MySQL HeatWave Database** >> **DB Systems**, click **Delete** to delete the MySQL HeatWave Database instance.
 
 2. From **Identity & Security** >> **Key Management & Secret Management** >> **Vault** >> **Secrets**, use **Delete Secret** to delete all three secrets.
 
@@ -30,11 +30,11 @@ From the Oracle Cloud Console, clean up the resources provisioned for this works
 
 4. From **Identity & Security** >> **Key Management & Secret Management** >> **Vault**, use **Delete Vault** to delete the vault.
 
-5. From **Resource Manager >> Stacks >> Stack Details** screen, run **Destroy** to delete the VCN and the Compute instance.
+5. From **Resource Manager** >> **Stacks** >> **Stack Details** screen, run **Destroy** to delete the VCN and the Compute instance.
 
-6. From **Resource Manager >> Stacks >> Stack Details** screen, **Delete** the stack.
+6. From **Resource Manager** >> **Stacks** >> **Stack Details** screen, **Delete** the stack.
 
-7. From **Identity & Security >> Identity >> Policies**, delete the Instance Principals policy.
+7. From **Identity & Security** >> **Identity** >> **Policies**, delete the Instance Principals policy.
 
 Congratulations! You've successfully completed this lab.
 

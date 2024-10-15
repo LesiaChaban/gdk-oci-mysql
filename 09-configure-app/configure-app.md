@@ -12,7 +12,7 @@ Estimated Lab Time: 05 minutes
 
 In this lab, you will:
 
-* Confirm the Application dependencies
+* Confirm and uncomment the Application dependencies
 * Configure the Application to read secrets stored in OCI Vault
 * Configure OCI Instance Principal Authentication
 
@@ -20,11 +20,9 @@ In this lab, you will:
 
 1. In VS Code, open _oci/pom.xml_.
 
-2. Confirm the _oci/pom.xml_ file contains a dependency on the `micronaut-oraclecloud-vault` and related OCI SDK dependencies
+2. Confirm and uncomment the following snippet in the _pom.xml_ file to add a dependency for `micronaut-oraclecloud-vault` and related OCI SDK dependencies to enable OCI Vault support.
 
 	The `micronaut-oracle-cloud` subproject provides integration between Micronaut applications and Oracle Cloud, including using Vault as a distributed configuration source.
-
-	Uncomment the following snippet in the _pom.xml_ file to add a dependency for `micronaut-oraclecloud-vault` and related OCI SDK dependencies to enable OCI Vault support:
 
     _oci/pom.xml_
 
@@ -116,6 +114,14 @@ In this lab, you will:
 	```bash
 	<copy>
 	export DATASOURCES_DEFAULT_URL='jdbc:mysql://'$MYSQL_IP':3306/<gdkDB'
+	</copy>
+	```
+
+13. Confirm the value set by running the following command:
+
+	```
+	<copy>
+	echo $DATASOURCES_DEFAULT_URL
 	</copy>
 	```
 
