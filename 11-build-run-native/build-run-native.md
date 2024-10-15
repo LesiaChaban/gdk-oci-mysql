@@ -45,7 +45,7 @@ In this lab, you will:
 
 	``` bash
 	<copy>
-	MICRONAUT_ENVIRONMENTS=oraclecloud  oci/target/oci-db-demo-oci
+	MICRONAUT_ENVIRONMENTS=oraclecloud oci/target/oci-db-demo-oci &
 	</copy>
 	```
 

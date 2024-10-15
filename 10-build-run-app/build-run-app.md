@@ -73,7 +73,7 @@ In this lab, you will:
 
 2. Once the application is running in the foreground, use `CTRL+C` to stop it.
 
-Congratulations! You've successfully completed this lab. Your Java application can successfully use the OCI Autonomous Database instance as its backend database, with secrets in OCI Vault.
+Congratulations! You've successfully completed this lab. Your Java application can successfully use the OCI MySQL HeatWave Database instance as its backend database, with secrets in OCI Vault.
 
 You may now **proceed to the next lab**.
 

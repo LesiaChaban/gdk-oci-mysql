@@ -157,6 +157,7 @@ In this lab, you will:
 	Allow any-user to read secret-family in compartment WORKSHOP_COMPARTMENT_NAME where ALL {request.principal.type='instance', request.principal.compartment.id='WORKSHOP_COMPARTMENT_OCID'}
 	</copy>
 	```
+
 	To learn more about access control policies for the Vault, see [Policy Reference - Details for Vault](https://docs.oracle.com/en-us/iaas/Content/Identity/Reference/keypolicyreference.htm).
 
 </if>

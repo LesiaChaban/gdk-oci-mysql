@@ -75,7 +75,9 @@ In this lab, you will:
 1. Bring the running application in the foreground:
 
     ```shell
+	<copy>
     fg
+	</copy>
     ```
 
 2. Once the application is running in the foreground, use `CTRL+C` to stop it.
@@ -83,7 +85,9 @@ In this lab, you will:
 3. Stop the MySQL container started in Step 4.
 
     ``` bash
+	<copy>
     docker rm -f "mysql.8"
+	</copy>
     ```
 
 Congratulations! You've successfully completed this lab. Your Java application native executable is now connected to a local MySQL Database running in a container.

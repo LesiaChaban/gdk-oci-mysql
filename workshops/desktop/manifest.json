@@ -1,5 +1,5 @@
 {
-  "workshoptitle": "Build a Java application with the Graal Development Kit for Micronaut (GDK), Oracle Cloud Infrastructure Autonomous Database and Secrets in Vault",
+  "workshoptitle": "Learn how to build Java application with the Graal Development Kit for Micronaut, OCI MySQL HeatWave Database service and Secrets in OCI Vault",
   "variables": ["../../variables/variables.json"],
   "help": "livelabs-help-oci_us@oracle.com",
   "tutorials": [
@@ -23,8 +23,8 @@
       "filename": "../../02-git-clone/git-clone.md"
     },
     {
-      "title": "Lab 2: Provision an OCI Autonomous Database instance",
-      "filename": "../../03-provision-adb/provision-adb.md"
+      "title": "Lab 2: Provision an OCI MySQL HeatWave Database instance",
+      "filename": "../../03-provision-mysql-db/provision-mysql-db.md"
     },
     {
       "title": "Lab 3: Provision an OCI Vault",
@@ -35,31 +35,44 @@
       "filename": "../../05-review-code/review-code.md"
     },
     {
-      "title": "Lab 5: Configure the Autonomous Database instance and the Vault",
-      "filename": "../../06-configure-adb-and-vault/configure-adb-and-vault.md",
-      "type": "desktop"
-    },
-    {
-      "title": "Lab 6: Configure the application to use the Autonomous Database instance and the Vault",
-      "filename": "../../07-configure-app/configure-app.md",
-      "type": "desktop"
-    },
-    {
-      "title": "Lab 7: Build and Run the Application",
-      "filename": "../../08-build-run-app/build-run-app.md",
+      "title": "Lab 5: Build and run the application against a local MySQL database in a container",
+      "filename": "../../06-build-run-app-local/build-run-app-local.md",
       "type" : {
         "mn_run" : "mn:run",
         "jar" : "JAR"
       }
     },
     {
-      "title": "Lab 8: Build and Run a Native Executable",
-      "filename": "../../09-build-run-native/build-run-native.md",
+      "title": "Lab 6: Build and run a native executable and connect to the local MySQL database",
+      "filename": "../../07-build-run-native-local/build-run-native-local.md",
       "type": "desktop"
     },
     {
-      "title": "Lab 9: Cleanup",
-      "filename": "../../10-cleanup/cleanup.md",
+      "title": "Lab 7: Configure the MySQL HeatWave Database instance and the Vault",
+      "filename": "../../08-configure-mysql-and-vault/configure-mysql-and-vault.md",
+      "type": "desktop"
+    },
+    {
+      "title": "Lab 8: Configure the application to use the MySQL HeatWave Database instance and the Vault",
+      "filename": "../../09-configure-app/configure-app.md",
+      "type": "desktop"
+    },
+    {
+      "title": "Lab 9: Build and Run the Application",
+      "filename": "../../10-build-run-app/build-run-app.md",
+      "type" : {
+        "mn_run" : "mn:run",
+        "jar" : "JAR"
+      }
+    },
+    {
+      "title": "Lab 10: Build and Run a Native Executable",
+      "filename": "../../11-build-run-native/build-run-native.md",
+      "type": "desktop"
+    },
+    {
+      "title": "Lab 11: Cleanup",
+      "filename": "../../12-cleanup/cleanup.md",
       "type": "desktop"
     },
     {

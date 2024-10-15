@@ -22,7 +22,7 @@ Set the MySQL Private IP Address value in an environment variable called `MYSQL_
 
 1. From the Oracle Cloud Console, navigate to **OCI Databases >> DB Systems >> DB System Details**, in the **Connections** tab, under **Endpoint**, click **Copy** to copy the **Private IP Address**.
 
-   ![MySQL Endpoint Private IP](./images/mysql-endpoint-private-ip.jpg#input)
+   ![MySQL Endpoint Private IP](./images/mysql-endpoint-private-ip.png#input)
 
 2. From the same terminal in VS Code, set the environment variable `MYSQL_IP` using the <Private-IP> you copied.
 
@@ -84,7 +84,7 @@ Set the MySQL Private IP Address value in an environment variable called `MYSQL_
    ```bash
    <copy>
    GRANT ALL ON gdkDB.* TO 'guide_user'@'<COMPUTE_INSTANCE_PRIVATE_IP>';
-   </Copy>
+   </copy>
    ```
 
 5. Exit the MySQL console:

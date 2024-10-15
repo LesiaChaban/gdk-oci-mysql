@@ -28,7 +28,7 @@ In this lab, you will:
 
 4. You will see the **Create DB System** screen. Select **Development or testing**.
 
-    ![Create DB System Screen](images/mysql-db-system-form.jpg#input)
+    ![Create DB System Screen](images/mysql-db-system-form.png#input)
 
 5. Under the **Create administrator credentials** section, enter the username as "mysqladmin" and a password of your choice.
 
@@ -48,7 +48,7 @@ In this lab, you will:
 
 9. Under the **Configure backup plan** section, deselect **Enable automatic backups**. Click **Create**.
 
-    ![Disable MySQL Automatic Backup and Create](images/mysql-backup-create.jpg#input)
+    ![Disable MySQL Automatic Backup and Create](images/mysql-backup-create.png)
 
     It takes about 10 minutes to provision an OCI MySQL DB System instance. Meanwhile, proceed to the next step.
 
