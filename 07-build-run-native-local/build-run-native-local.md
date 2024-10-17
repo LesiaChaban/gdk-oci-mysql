@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This lab describes how to generate and run application native executable using GraalVM Native Image and connect it to a MySQL Database running in a container.
+This lab describes how to generate and run a native executable for the application using GraalVM Native Image and connect it to a MySQL Database running in a container.
 
 You will use [GraalVM Native Image](https://docs.oracle.com/en/graalvm/jdk/17/docs/overview/)’s ahead-of-time compilation to build a native executable for the application.
 
@@ -39,9 +39,9 @@ In this lab, you will:
 	</copy>
 	```
 
-   It can take approximately 7-8 minutes to generate the native executable.
+    It takes around three minutes to generate the native executable.
 
-3. The native executable is created in the _oci/target_ directory and can be run with the following command by appending an `&`:
+3. The native executable is created in the _oci/target_ directory. Run it in the background by appending an `&` as shown below.
 
 	``` bash
 	<copy>
@@ -74,21 +74,21 @@ In this lab, you will:
 
 1. Bring the running application in the foreground:
 
-    ```shell
+	``` bash
 	<copy>
-    fg
+	fg
 	</copy>
-    ```
+	```
 
 2. Once the application is running in the foreground, use `CTRL+C` to stop it.
 
-3. Stop the MySQL container started in Step 4.
+3. Stop the MySQL container started in the previous lab.
 
-    ``` bash
+	``` bash
 	<copy>
-    docker rm -f "mysql.8"
+	docker rm -f "mysql.8"
 	</copy>
-    ```
+	```
 
 Congratulations! You've successfully completed this lab. Your Java application native executable is now connected to a local MySQL Database running in a container.
 

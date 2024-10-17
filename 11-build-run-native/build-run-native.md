@@ -75,11 +75,11 @@ In this lab, you will:
 
 1. Bring the running application in the foreground:
 
-    ```bash
+	```bash
 	<copy>
-    fg
+	fg
 	</copy>
-    ```
+	```
 
 2. In the first terminal in VS Code, use `CTRL+C` to stop the application.
 

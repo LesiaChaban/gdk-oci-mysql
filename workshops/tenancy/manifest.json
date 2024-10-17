@@ -1,5 +1,5 @@
 {
-  "workshoptitle": "Learn how to build Java application with the Graal Development Kit for Micronaut, OCI MySQL HeatWave Database service and Secrets in OCI Vault",
+  "workshoptitle": "Learn how to build a Java application with the Graal Development Kit for Micronaut, OCI MySQL HeatWave Database service and Secrets in OCI Vault",
   "variables": ["../../variables/variables.json"],
   "help": "livelabs-help-oci_us@oracle.com",
   "tutorials": [

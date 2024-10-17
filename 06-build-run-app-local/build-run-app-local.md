@@ -87,7 +87,7 @@ In this lab, you will:
 	</copy>
 	```
 
-## Task 3: Check the Genres present in the MySQL database
+## Task 4: Check the Genres present in the MySQL database
 
 1. Check the `genres` present in the MySQL database using the `/list` endpoint exposed by the application:
 
@@ -97,7 +97,7 @@ In this lab, you will:
 	</copy>
     ```
 
-## Task 4: Stop the application
+## Task 5: Stop the application
 
 1. Bring the running application in the foreground:
 
@@ -109,7 +109,7 @@ In this lab, you will:
 
 2. Once the application is running in the foreground, use `CTRL+C` to stop it.
 
-Congratulations! You've successfully completed this lab. Your Java application successfully use the OCI MySQL HeatWave Database instance as its backend, with secrets in OCI Vault.
+Congratulations! You've successfully completed this lab. Your Java application can successfully use the OCI MySQL HeatWave Database instance as its backend, with secrets in OCI Vault.
 
 You may now **proceed to the next lab**.
 

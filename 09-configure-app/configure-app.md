@@ -12,15 +12,15 @@ Estimated Lab Time: 05 minutes
 
 In this lab, you will:
 
-* Confirm and uncomment the Application dependencies
+* Uncomment the Application dependencies
 * Configure the Application to read secrets stored in OCI Vault
 * Configure OCI Instance Principal Authentication
 
-## Task 1: Confirm the Application dependencies
+## Task 1: Uncomment the Application dependencies
 
 1. In VS Code, open _oci/pom.xml_.
 
-2. Confirm and uncomment the following snippet in the _pom.xml_ file to add a dependency for `micronaut-oraclecloud-vault` and related OCI SDK dependencies to enable OCI Vault support.
+2. Uncomment the following snippet in the _pom.xml_ file to add a dependency for `micronaut-oraclecloud-vault` and related OCI SDK dependencies to enable OCI Vault support.
 
 	The `micronaut-oracle-cloud` subproject provides integration between Micronaut applications and Oracle Cloud, including using Vault as a distributed configuration source.
 
@@ -49,7 +49,7 @@ In this lab, you will:
     micronaut.config-client.enabled=true
     ```
 
-2. Confirm and uncomment the following snippet in the _bootstrap-oraclecloud.properties_ file. This snippet configures the application to read secrets stored in OCI Vault when the application is running on an OCI Compute Instance. You'll set the value of the externalized configuration variables `VAULT_ID` and `COMPARTMENT_ID` in subsequent steps.
+2. Uncomment the following snippet in the _bootstrap-oraclecloud.properties_ file. This snippet configures the application to read secrets stored in OCI Vault when the application is running on an OCI Compute Instance. You'll set the value of the externalized configuration variables `VAULT_ID` and `COMPARTMENT_ID` in subsequent steps.
 
     _oci/src/main/resources/bootstrap-oraclecloud.properties_
 
@@ -113,7 +113,7 @@ In this lab, you will:
 
 	```bash
 	<copy>
-	export DATASOURCES_DEFAULT_URL='jdbc:mysql://'$MYSQL_IP':3306/<gdkDB'
+	export DATASOURCES_DEFAULT_URL='jdbc:mysql://'$MYSQL_IP':3306/gdkDB'
 	</copy>
 	```
 

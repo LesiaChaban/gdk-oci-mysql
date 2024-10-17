@@ -22,14 +22,14 @@ The configuration file contains the datasource definition
 
 _oci/src/main/resources/application-oraclecloud.properties_
 
-    ```
-    datasources.default.db-type=mysql
-    datasources.default.dialect=MYSQL
-    datasources.default.driver-class-name=com.mysql.cj.jdbc.Driver
-    datasources.default.url=${DATASOURCES_DEFAULT_URL:`jdbc:mysql://localhost:3306/db`}
-    datasources.default.username=${JDBC_USER:sherlock}
-    datasources.default.password=${JDBC_PASSWORD:elementary}
-    ```
+``` properties
+datasources.default.db-type=mysql
+datasources.default.dialect=MYSQL
+datasources.default.driver-class-name=com.mysql.cj.jdbc.Driver
+datasources.default.url=${DATASOURCES_DEFAULT_URL:`jdbc:mysql://localhost:3306/db`}
+datasources.default.username=${JDBC_USER:sherlock}
+datasources.default.password=${JDBC_PASSWORD:elementary}
+```
 
 The use of properties, in the form `property: ${<env-var>:<default-value>}`, to define the datasource
 enables the configuration to be externalized. For example, if an environment variable (`<env-var>`) such as `DATASOURCES_DEFAULT_URL` is not defined, the Micronaut framework will use the default value (`<default-value>`) specified.
@@ -41,7 +41,7 @@ So if `DATASOURCES_DEFAULT_URL` is not specified, the Micronaut framework sets t
 
 The application uses [Micronaut integration with Flyway](https://micronaut-projects.github.io/micronaut-flyway/latest/guide/) to create a database schema on the fly by:
 
-1. Including the following dependency:
+1. Including the following dependencies:
 
 	_oci/pom.xml_
 
@@ -53,13 +53,13 @@ The application uses [Micronaut integration with Flyway](https://micronaut-proje
 	</dependency>
 	```
 
-    ``` xml
-    <dependency>
-        <groupId>org.flywaydb</groupId>
-        <artifactId>flyway-mysql</artifactId>
-        <scope>runtime</scope>
-    </dependency>
-    ```
+	``` xml
+	<dependency>
+		<groupId>org.flywaydb</groupId>
+		<artifactId>flyway-mysql</artifactId>
+		<scope>runtime</scope>
+	</dependency>
+	```
 
 2. Enabling Flyway in the _application-oraclecloud.properties_ file for the `default` datasource:
 
@@ -75,14 +75,13 @@ The application uses [Micronaut integration with Flyway](https://micronaut-proje
 
 	_lib/src/main/resources/db/migration/V1\_\_schema.sql_
 
-    ``` sql
-    DROP TABLE IF EXISTS genre;
-
-    CREATE TABLE genre (
-        id    BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-        name  VARCHAR(255) NOT NULL UNIQUE
-    );
-    ```
+	``` sql
+	CREATE TABLE "GENRE" (
+	   "ID"    NUMBER(19) PRIMARY KEY NOT NULL,
+	   "NAME"  VARCHAR(255) NOT NULL
+	);
+	CREATE SEQUENCE "GENRE_SEQ" MINVALUE 1 START WITH 1 NOCACHE NOCYCLE;
+	```
 
    During application startup, Flyway runs the commands in this SQL file and creates the schema needed for the application.
 

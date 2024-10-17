@@ -2,7 +2,7 @@
 
 ## Introduction
 
-TThis lab describes how to generate and run the application, and use it to connect to the OCI MySQL HeatWave Database instance with secrets in OCI Vault.
+This lab describes how to generate and run the application, and use it to connect to the OCI MySQL HeatWave Database instance with secrets in OCI Vault.
 
 Estimated Lab Time: 10 minutes
 
@@ -55,21 +55,21 @@ In this lab, you will:
 
 1. Check the `genres` present in the MySQL database using the `/list` endpoint exposed by the application:
 
-    ``` bash
+	``` bash
 	<copy>
-    curl localhost:8080/genres/list | jq
+	curl localhost:8080/genres/list | jq
 	</copy>
-    ```
+	```
 
 ## Task 4: Stop the application
 
 1. Bring the running application in the foreground:
 
-    ```bash
+	```bash
 	<copy>
-    fg
+	fg
 	</copy>
-    ```
+	```
 
 2. Once the application is running in the foreground, use `CTRL+C` to stop it.
 
