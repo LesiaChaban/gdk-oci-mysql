@@ -76,11 +76,12 @@ The application uses [Micronaut integration with Flyway](https://micronaut-proje
 	_lib/src/main/resources/db/migration/V1\_\_schema.sql_
 
 	``` sql
-	CREATE TABLE "GENRE" (
-	   "ID"    NUMBER(19) PRIMARY KEY NOT NULL,
-	   "NAME"  VARCHAR(255) NOT NULL
+	DROP TABLE IF EXISTS genre;
+	
+	CREATE TABLE genre (
+		id    BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+		name  VARCHAR(255) NOT NULL UNIQUE
 	);
-	CREATE SEQUENCE "GENRE_SEQ" MINVALUE 1 START WITH 1 NOCACHE NOCYCLE;
 	```
 
    During application startup, Flyway runs the commands in this SQL file and creates the schema needed for the application.
@@ -92,6 +93,7 @@ In this example, the domain entity is a simple `Genre` object that maps to the `
 _lib/src/main/java/com/example/domain/Genre.java_
 
 ``` java
+@Serdeable
 @MappedEntity // <1>
 public class Genre {
 ```

@@ -63,9 +63,7 @@ In this lab, you will:
 
 3. Navigate to the **Identity & Security >> Compartments** section in the Oracle Cloud Console, find your workshop compartment in the list, open it, in the **Compartment Information** section click **Copy** to copy the value of the Compartment OCID. This is the compartment when you created the secrets.
 
-4. Open a first terminal in VS Code using the **Terminal > New Terminal** menu.
-
-5. Set the environment variable `COMPARTMENT_ID` using the secrets' compartment OCID you copied.
+4. In the same terminal in VS Code, set the environment variable `COMPARTMENT_ID` using the secrets' compartment OCID you copied.
 
 	```
 	<copy>
@@ -73,7 +71,7 @@ In this lab, you will:
 	</copy>
 	```
 
-6. Confirm the value set by running the following command:
+5. Confirm the value set by running the following command:
 
 	```
 	<copy>
@@ -81,9 +79,9 @@ In this lab, you will:
 	</copy>
 	```
 
-8. Navigate to the **Identity & Security >> Vault** section in the Oracle Cloud Console, find your recently created Vault, open it, in the **Vault Information** section click **Copy** to copy the value of the Vault OCID.
+6. Navigate to the **Identity & Security >> Vault** section in the Oracle Cloud Console, find your recently created Vault, open it, in the **Vault Information** section click **Copy** to copy the value of the Vault OCID.
 
-9. In the same terminal in VS Code, set the environment variable `VAULT_ID` using the Vault OCID you copied.
+7. In the same terminal in VS Code, set the environment variable `VAULT_ID` using the Vault OCID you copied.
 
 	```
 	<copy>
@@ -91,7 +89,7 @@ In this lab, you will:
 	</copy>
 	```
 
-10. Confirm the value set by running the following command:
+8. Confirm the value set by running the following command:
 
 	```
 	<copy>
@@ -99,7 +97,7 @@ In this lab, you will:
 	</copy>
 	```
 
-11. The application uses externalized configuration (`DATASOURCES_DEFAULT_URL`, `JDBC_USER`, and `JDBC_PASSWORD`) to establish a database connection. Here, the application will automatically connect to OCI Vault and retrieve the values of the secrets `JDBC_USER` and `JDBC_PASSWORD` from OCI Vault. The application will use the `DATASOURCES_DEFAULT_URL` set as an environment variable.
+9. The application uses externalized configuration (`DATASOURCES_DEFAULT_URL`, `JDBC_USER`, and `JDBC_PASSWORD`) to establish a database connection. Here, the application will automatically connect to OCI Vault and retrieve the values of the secrets `JDBC_USER` and `JDBC_PASSWORD` from OCI Vault. The application will use the `DATASOURCES_DEFAULT_URL` set as an environment variable.
 
 	_oci/src/main/resources/application-oraclecloud.properties_
 
@@ -109,7 +107,7 @@ In this lab, you will:
 	datasources.default.password=${JDBC_PASSWORD:elementary}
 	```
 
-12. Set the environment variable `DATASOURCES_DEFAULT_URL` using the MySQL database name you created.
+10. Set the environment variable `DATASOURCES_DEFAULT_URL` using the MySQL database name you created.
 
 	```bash
 	<copy>
@@ -117,7 +115,7 @@ In this lab, you will:
 	</copy>
 	```
 
-13. Confirm the value set by running the following command:
+11. Confirm the value set by running the following command:
 
 	```
 	<copy>
@@ -127,7 +125,7 @@ In this lab, you will:
 
 ## Task 3: <if type="desktop">Use</if><if type="tenancy">Configure</if> OCI Instance Principal Authentication
 
-1. In VS Code, open `bootstrap-oraclecloud.properties`. The application is configured to use `OCI Instance Principal Authentication` when it is running on an OCI Compute Instance. Uncomment it.
+1. In VS Code, open `bootstrap-oraclecloud.properties`. Uncomment the property `oci.config.instance-principal.enabled=true`. The application is configured to use `OCI Instance Principal Authentication` when it is running on an OCI Compute Instance. 
 
 	_oci/src/main/resources/bootstrap-oraclecloud.properties_
 

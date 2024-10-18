@@ -23,7 +23,7 @@ In this lab, you will:
 
 ## Task 1: Build and run a native executable for the application
 
-1. In the first terminal in VS Code, check the version of the GraalVM native-image utility:
+1. In the same terminal in VS Code, check the version of the GraalVM native-image utility:
 
 	``` bash
 	<copy>
@@ -39,9 +39,9 @@ In this lab, you will:
 	</copy>
 	```
 
-   It can take approximately 7-8 minutes to generate the native executable.
+   It can take approximately 4-5 minutes to generate the native executable.
 
-3. The native executable is created in the _oci/target_ directory and can be run with the following command:
+3. The native executable is created in the _oci/target_ directory. Run it in the background by appending an `&` as shown below.
 
 	``` bash
 	<copy>
@@ -53,7 +53,7 @@ In this lab, you will:
 
 ## Task 2: Send an HTTP POST request to add a Genre
 
-1. From the second terminal in VS Code, add a genre using the command below.
+1. From the same terminal in VS Code, add a genre using the command below.
 
 	``` bash
 	<copy>
@@ -81,7 +81,7 @@ In this lab, you will:
 	</copy>
 	```
 
-2. In the first terminal in VS Code, use `CTRL+C` to stop the application.
+2. Once the application is running in the foreground, use `CTRL+C` to stop it.
 
 Congratulations! You've successfully completed this lab. Your Java application native executable is now using the OCI MySQL HeatWave Database instance as its backend, with secrets in OCI Vault.
 

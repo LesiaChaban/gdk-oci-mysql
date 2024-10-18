@@ -1,8 +1,8 @@
-# Configure the MySQL HeatWave Database instance and the Vault
+# Configure the OCI MySQL HeatWave Database instance and the Vault
 
 ## Introduction
 
-This lab provides instructions to configure the the OCI MySQL HeatWave Database instance and the OCI Vault.
+This lab provides instructions to configure the OCI MySQL HeatWave Database instance and the OCI Vault.
 
 Flyway will create the database tables the first time the application starts, but you must create a database user first.
 
@@ -12,11 +12,11 @@ Estimated Lab Time: 05 minutes
 
 In this lab, you will:
 
-* Set the MySQL Private IP Address value
+* Connect to the OCI MySQL HeatWave DB System instance
 * Create a MySQL database, a user and password
 * Create secrets in the Vault for database user and password
 
-## Task 1: Set the MySQL Private IP Address value
+## Task 1: Connect to the OCI MySQL HeatWave DB System instance
 
 Set the MySQL Private IP Address value in an environment variable called `MYSQL_IP` for use in subsequent steps.
 
@@ -24,7 +24,7 @@ Set the MySQL Private IP Address value in an environment variable called `MYSQL_
 
    ![MySQL Endpoint Private IP](./images/mysql-endpoint-private-ip.png#input)
 
-2. From the same terminal in VS Code, set the environment variable `MYSQL_IP` using the <Private-IP> you copied.
+2. From the same terminal in VS Code, set the environment variable `MYSQL_IP` using the `<Private-IP>` you copied.
 
 	```bash
 	<copy>
@@ -42,17 +42,17 @@ Set the MySQL Private IP Address value in an environment variable called `MYSQL_
 
 4. Connect to the OCI MySQL HeatWave DB System instance using the private IP Address, the administrator username "mysqladmin" and the password you created earlier.
 
-   >**Note**: If you entered a different administrator username when you created the OCI MySQL DB System instance, replace "mysqladmin" before running the following command:
+	>**Note**: If you entered a different administrator username when you created the OCI MySQL DB System instance, replace "mysqladmin" before running the following command:
 
 	```bash
 	<copy>
 	mysql --host $MYSQL_IP -u mysqladmin -p
 	</copy>
 	```
-
-   When prompted to enter a password, enter the password you used when you created the OCI MySQL DB System instance.
-
-   You should see the `mysql>` prompt.
+	
+	When prompted to enter a password, enter the password you used when you created the OCI MySQL DB System instance.
+	
+	You should see the `mysql>` prompt.
 
 ## Task 2: Create a MySQL database, a user and password
 

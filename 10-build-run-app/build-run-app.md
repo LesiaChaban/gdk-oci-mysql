@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This lab describes how to generate and run the application, and use it to connect to the OCI MySQL HeatWave Database instance with secrets in OCI Vault.
+This lab describes how to build and run the application, and use it to connect to the OCI MySQL HeatWave Database instance with secrets in OCI Vault.
 
 Estimated Lab Time: 10 minutes
 
@@ -20,7 +20,7 @@ In this lab, you will:
 1. In the same terminal in VS Code, run the following command(s):
 
 <if type="mn_run">
-   Use `mn:run` to build and start the application on port 8080.
+   Use `mn:run` to build and start the application on port 8080. Run it in the background by appending an `&` as shown below.
 
 	``` bash
 	<copy>
@@ -30,7 +30,7 @@ In this lab, you will:
 </if>
 
 <if type="jar">
-   Build an executable JAR file and then use `java -jar` to run it.
+   Build an executable JAR file and then use `java -jar` to run it. Run it in the background by appending an `&` as shown below.
 
 	``` bash
 	<copy>

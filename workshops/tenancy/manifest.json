@@ -58,7 +58,7 @@
       "type": "tenancy"
     },
     {
-      "title": "Lab 7: Configure the MySQL HeatWave Database instance and the Vault",
+      "title": "Lab 7: Configure the OCI MySQL HeatWave Database instance and the Vault",
       "filename": "../../08-configure-mysql-and-vault/configure-mysql-and-vault.md",
       "type": "tenancy"
     },

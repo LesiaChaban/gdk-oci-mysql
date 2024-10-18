@@ -22,9 +22,9 @@ In this lab, you will:
 
 From the Oracle Cloud Console, clean up the resources provisioned for this workshop:
 
-1. From **Databases** >> **MySQL HeatWave Database** >> **DB Systems**, click **Delete** to delete the MySQL HeatWave Database instance.
+1. From **Databases** >> **MySQL HeatWave Database** >> **DB Systems**, click **Delete** to delete the MySQL HeatWave Database instance permanently.
 
-2. From **Identity & Security** >> **Key Management & Secret Management** >> **Vault** >> **Secrets**, use **Delete Secret** to delete all three secrets.
+2. From **Identity & Security** >> **Key Management & Secret Management** >> **Vault** >> **Secrets**, use **Delete Secret** to delete both the secrets.
 
 3. From **Identity & Security** >> **Key Management & Secret Management** >> **Vault** >> **Master Encryption Keys**, use **Delete Key** to delete the master encryption key.
 

@@ -39,7 +39,7 @@ In this lab, you will:
 	</copy>
 	```
 
-    It takes around three minutes to generate the native executable.
+    It takes around four minutes to generate the native executable.
 
 3. The native executable is created in the _oci/target_ directory. Run it in the background by appending an `&` as shown below.
 
